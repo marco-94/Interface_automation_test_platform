@@ -8,6 +8,7 @@ app_name = 'api'
 
 router = routers.SimpleRouter()
 router.register('user', model_view_set.UserListView, basename='')
+router.register('login', model_view_set.UserTokenView, basename='')
 
 urlpatterns = [
     path('', include(router.urls)),

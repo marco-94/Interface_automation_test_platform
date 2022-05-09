@@ -40,17 +40,17 @@ INSTALLED_APPS = [
     'django_filters',
     'drf_yasg',
     'rest_framework_swagger',
-    'corsheaders',
+    # 'corsheaders',
 ]
 
-REST_FRAMEWORK = {
-    'EXCEPTION_HANDLER': 'api.utls.api_exception.custom_exception_handler',
-    'DEFAULT_RENDERER_CLASSES': ('api.utls.render_response.CustomerRenderer',),
-    'DEFAULT_PAGINATION_CLASS': 'api.utls.page_number.PageNumber',
-}
+# REST_FRAMEWORK = {
+#     'EXCEPTION_HANDLER': 'api.utls.api_exception.custom_exception_handler',
+#     'DEFAULT_RENDERER_CLASSES': ('api.utls.render_response.CustomerRenderer',),
+#     'DEFAULT_PAGINATION_CLASS': 'api.utls.page_number.PageNumber',
+# }
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
+    # 'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
