@@ -8,3 +8,4 @@
 <li>Vue</li>
 <li>Element UI</li>
 <li>Javascript</li>
+<li>Mysql</li>
